@@ -2,8 +2,11 @@
 Validate customer SSN and Address using below API call.
 
 API: http://{host}:{port}/customers/validate
+
 Method: POST
+
 body:
+````
 {
 
 	"name": "abc",
@@ -18,4 +21,5 @@ body:
 		"country": "USA"
 	}
 }
+````
 N.B. host-> localhost port-> 8080

@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "e445fe7d-e610-4eb4-bc1f-19070aeab097",
+		"name": "Customer_validation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n\t\"name\": \"abc\",\n\t\"phone\": \"1034895\",\n\t\"ssn\": \"0000-000-9600\",\n\t\"address\": {\n\t\t\n\t\t\"street\": \"1000 N 4 st\",\n\t\t\"city\": \"fairfield\",\n\t\t\"state\": \"iowa\",\n\t\t\"zipCode\": \"53446\",\n\t\t\"country\": \"USA\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers/validate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer validation with response all of",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n\t\"name\": \"abc\",\n\t\"phone\": \"1034895\",\n\t\"ssn\": \"0000-000-9600\",\n\t\"address\": {\n\t\t\n\t\t\"street\": \"1000 N 4 st\",\n\t\t\"city\": \"fairfield\",\n\t\t\"state\": \"iowa\",\n\t\t\"zipCode\": \"53446\",\n\t\t\"country\": \"USA\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers/validate/with-all-of",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"validate",
+						"with-all-of"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

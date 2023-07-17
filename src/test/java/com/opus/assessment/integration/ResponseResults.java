@@ -17,6 +17,7 @@ public class ResponseResults {
         final StringWriter stringWriter = new StringWriter();
         IOUtils.copy(bodyInputStream, stringWriter);
         this.body = stringWriter.toString();
+
     }
 
     ClientHttpResponse getTheResponse() {

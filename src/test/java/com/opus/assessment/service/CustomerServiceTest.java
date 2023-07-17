@@ -60,7 +60,7 @@ public class CustomerServiceTest {
 
     @DisplayName("Service class Test: customer validation for ssn and address")
     @Test
-    void calculateReward() throws Exception {
+    void doValidation() throws Exception {
         CompletableFuture<CustomerDTO> customerDTO = customerService.validateCustomer(customer);
         assertTrue(customerDTO.get().getSsnDTO().getValid());
         assertTrue(customerDTO.get().getAddress().getValid());

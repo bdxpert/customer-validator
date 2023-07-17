@@ -36,7 +36,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public CompletableFuture<CustomerDTO> validateCustomer(Customer customer) {
         // fetch client
-        // 1. if it is already exist in bd pic that one
+        // 1. if it is already exist in db pic that one
         // 2. else fetch from api call
         CompletableFuture<Optional<CustomerDTO>> customerResponseCFMy = CompletableFuture.supplyAsync(
                 () -> customerClient.findCustomer(customer)
@@ -62,7 +62,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public CompletableFuture<CustomerDTO> validateCustomerAllOff(Customer customer) {
         // fetch client
-        // 1. if it is already exist in bd pic that one
+        // 1. if it is already exist in db pic that one
         // 2. else fetch from api call
         CompletableFuture<Optional<CustomerDTO>> customerResponseCFMy = CompletableFuture.supplyAsync(
                 () -> customerClient.findCustomer(customer)

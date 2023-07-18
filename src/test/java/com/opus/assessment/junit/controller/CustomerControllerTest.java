@@ -1,4 +1,4 @@
-package com.opus.assessment.controller;
+package com.opus.assessment.junit.controller;
 
 import com.opus.assessment.dto.CustomerDTO;
 import org.json.JSONException;

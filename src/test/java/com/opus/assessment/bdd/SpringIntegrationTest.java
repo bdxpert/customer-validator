@@ -1,4 +1,4 @@
-package com.opus.assessment.integration;
+package com.opus.assessment.bdd;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -7,16 +7,10 @@ import com.opus.assessment.CustomerValidatorApplication;
 import io.cucumber.spring.CucumberContextConfiguration;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
 import org.springframework.http.client.ClientHttpResponse;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.web.client.ResponseErrorHandler;
 import org.springframework.web.client.RestTemplate;
 

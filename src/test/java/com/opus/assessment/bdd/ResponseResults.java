@@ -1,4 +1,4 @@
-package com.opus.assessment.integration;
+package com.opus.assessment.bdd;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,8 +1,7 @@
-package com.opus.assessment.integration;
+package com.opus.assessment.bdd;
 
 import com.opus.assessment.dto.CustomerDTO;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.messages.internal.com.google.gson.Gson;

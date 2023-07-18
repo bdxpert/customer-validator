@@ -1,4 +1,4 @@
-package com.opus.assessment.service;
+package com.opus.assessment.junit.service;
 
 import com.opus.assessment.client.AddressValidator;
 import com.opus.assessment.client.CustomerClient;
@@ -6,6 +6,7 @@ import com.opus.assessment.client.SSNValidator;
 import com.opus.assessment.domain.Address;
 import com.opus.assessment.domain.Customer;
 import com.opus.assessment.dto.CustomerDTO;
+import com.opus.assessment.service.CustomerService;
 import com.opus.assessment.service.impl.CustomerServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -23,7 +24,7 @@ import static org.mockito.Mockito.when;
 @SpringBootTest
 public class CustomerServiceTest {
     @Autowired
-    private  CustomerService customerService;
+    private CustomerService customerService;
     @Autowired
     private  CustomerClient customerClient;
     @Autowired
